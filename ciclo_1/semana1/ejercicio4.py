@@ -18,13 +18,13 @@ def calPromedio():
     promedio = round( (nota1 + nota2 + nota3 + nota4)/4,1 )
     return promedio
 
-print(calPromedio())
+#print(calPromedio())
 
 def cPromedio(nota1,nota2,nota3,nota4):
     promedio = (nota1 + nota2 + nota3 + nota4)/4
     return round(promedio,1)
 
-print(cPromedio(nota1, nota2, nota3, nota4))
+#print(cPromedio(nota1, nota2, nota3, nota4))
 
 def promedioNotas():
     nota1 = 4.3
@@ -35,4 +35,4 @@ def promedioNotas():
     promedio = (nota1 + nota2 + nota3 + nota4)/4
     return round(promedio,1)
 
-print(promedioNotas())
+#print(promedioNotas())
