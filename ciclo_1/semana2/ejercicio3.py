@@ -107,3 +107,85 @@ print(linea.startswith('Que'))
 print(linea.startswith('q'))
 print(linea.lower().startswith('q'))
 print(linea.lower())
+
+
+# Pieza de código que permite cortar el host del correo electronico 
+# y luego imprimirlo
+
+# conseguir la posición del @ 
+cadena = 'De stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+posicion = cadena.find('@')
+print(posicion)
+
+espacio = cadena.find(' ',posicion)
+print(espacio)
+
+host = cadena[posicion + 1:espacio]
+print(host)
+
+# Operador de Formato
+
+# %s cadena
+# %d número
+
+nombre = 'Luis'
+numero = 30
+
+print('%s %d' % (nombre, numero))
+
+saludo = 'Hola'
+print('%s, Luis' % (saludo))
+
+camellos = 42
+
+print('He visto %d camellos' % camellos)
+
+# Omitir caracteres especiales
+
+cadena = 'Hola\nmundo'
+print(cadena)
+
+cadena = r'Hola\nmundo'
+print(cadena)
+
+
+# Método de count en cadena de texto (String)
+
+frase = 'un uno, un dos, un tres'
+
+print(frase.count('un')) # sacar 4 hay "un" en la cadena
+print(frase.count('un',10)) # sacar 1 teniendo en cuenta la posición inicial
+print(frase.count('un',0,10)) # sacar 3 "un" teniendo en cuenta el rango
+
+# Método replace
+
+print(frase.replace('un', 'XXX'))
+print(frase.replace('un', 'XXXX', 2))
+
+
+var1 = 10
+var2 = 20
+
+print('El valor es: {}'.format(12))
+print('El valor es: {}'.format(11.2343))
+
+print('Los valores son: {}, {} y {}'.format(1,2,3))
+print('Los valores son: {1}, {0} y {2}'.format(1,2,3))
+
+print('Los valores son: {num1} y {num2}'.format(num1 = 2,num2 = 3))
+print('Los valores son: {1} y {0}'.format(var1,var2))
+
+
+# Multiplicacion de una cadena
+
+mensaje = 'Hola' * 3
+mensaje2 = 'mundo'
+print(mensaje + mensaje2)
+
+
+# Añadir en una cadena
+
+msg = 'Hola'
+msg += ' '
+msg += 'mundo'
+print(msg)

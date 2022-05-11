@@ -9,7 +9,11 @@ def CDT(usuario, capital,tiempo):
         valor_aperder = capital * porcentaje_aperder
         valor_total = capital - valor_aperder
     
-    return "Para el usuario " + str(usuario) + " La cantidad de dinero a recibir, según el monto inicial " + str(capital) + " para un tiempo de " + str(tiempo) + " meses es: " + str(valor_total)
+    rta  = "Para el usuario " + str(usuario)
+    rta += " La cantidad de dinero a recibir, según el monto inicial " + str(capital)
+    rta += " para un tiempo de " + str(tiempo) 
+    rta += " meses es: " + str(valor_total)
 
+    return rta 
 
 print(CDT("AB1012",1000000,3))
