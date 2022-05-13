@@ -16,4 +16,6 @@ def CDT(usuario, capital,tiempo):
 
     return rta 
 
-print(CDT("AB1012",1000000,3))
+# Recordar que el bot de la plataforma no se debe hacer impresiones (print), 
+# ni llamar la función
+# print(CDT("AB1012",1000000,3))
