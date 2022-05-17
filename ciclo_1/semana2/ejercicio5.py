@@ -193,3 +193,58 @@ dicNotas['Nota2'] = 3.3
 dicNotas['Nota3'] = 2.3
 dicNotas['Nota4'] = 4.0
 print('El promedio es de: ', promedioNotas2(dicNotas))
+
+def promedioNotas3(dicNotas: dict):
+    sumatoria  = 0
+    sumatoria += dicNotas['Nota1']
+    sumatoria += dicNotas['Nota2']
+    sumatoria += dicNotas['Nota3']
+    sumatoria += dicNotas['Nota4']
+    promedio = round(sumatoria / 4, 2)
+    return promedio
+
+dicNotas3 = {
+    'Nota1': 3.9,
+    'Nota2': 4.6,
+    'Nota3': 3.7,
+    'Nota4': 1
+}
+
+print('El promedio es de: ', promedioNotas3(dicNotas3))
+
+
+
+
+
+# Paso entre funciones
+
+def reportePromedio(dicReporte):
+    return dicReporte['estudiante'] + " = " + str(dicReporte['promedio'])
+
+def generarReporteNotas(dicNotas):
+    sumatoria  = 0
+    sumatoria += dicNotas['Nota1']
+    sumatoria += dicNotas['Nota2']
+    sumatoria += dicNotas['Nota3']
+    sumatoria += dicNotas['Nota4']
+
+    promedio = round(sumatoria / 4, 2)
+
+    reporteNotas = {
+        'estudiante': dicNotas['estudiante'],
+        'promedio': promedio
+    }
+
+    return reporteNotas
+
+dicNotas4 = {
+    'estudiante': 'Beneficiario R.',
+    'Nota1': 3.9,
+    'Nota2': 4.6,
+    'Nota3': 3.7,
+    'Nota4': 1
+}
+
+print('El promedio es de: ', reportePromedio(generarReporteNotas(dicNotas4)))
+
+
