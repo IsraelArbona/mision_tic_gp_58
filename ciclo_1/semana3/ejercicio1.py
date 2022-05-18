@@ -177,7 +177,7 @@ while var < 11:
     print('Valor de variable: ', var)
 '''
 
-
+'''
 i = 0
 y = 0
 while i < 15:
@@ -189,7 +189,7 @@ while i < 15:
         i = i + 1
         if y == 4:
             break
-
+'''
 
 # Bucle while controlado por Evento.
 
@@ -225,4 +225,10 @@ else:
     else:
         print('No existen notas de los estudiantes')
 '''
+
+a , b = 0, 1
+
+while b < 100:
+    print(b)
+    a, b = b , a + b
 
