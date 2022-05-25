@@ -148,17 +148,51 @@ print(paquetes)
 
 # remove() -> busca y remueve un elemento de un conjunto.
 
+'''
 paquetes = {'python','zope','plone','django'}
 print(paquetes)
 paquetes.remove('django')
 print(paquetes)
+'''
 
+# symmetric_difference() -> devuelve todo los elementos que estan en un conjunto mutable
+# pero no de ambos.
 
+'''
+setMutable1 = set([4,3,11,7,5,2,1,4])
+setMutable2 = set([11,5,9,2,4,8])
 
+print(setMutable1)
+print(setMutable2)
+print(setMutable1.symmetric_difference(setMutable2))
+'''
 
+# symmetric_difference_update() -> modifica el conjunto con los elementos 
+# que estan en uno o otro de los conjunto pero no en ambos.
 
+'''
+paquete1 = set(['python','plone','django'])
+paquete2 = set(['django','zope','pyramid'])
 
+print(paquete1)
+print(paquete2)
 
+paquete1.symmetric_difference_update(paquete2)
+print(paquete1)
+'''
+
+# update() -> agrega los elemento de un conjunto en otro.
+
+'''
+version1 = set([5.1,6])
+version2 = set([2.1,2.5,3.6,4])
+
+print(version1)
+print(version2)
+
+version1.update(version2)
+print(version1)
+'''
 
 
 
