@@ -121,9 +121,9 @@ print(lista)
 '''
 
 # Conversión a diccionario
-
 # cadena -> diccionario (str - dict)
 
+'''
 cadena = 'Grupo_58'
 
 diccionarioCadena = dict()
@@ -133,4 +133,23 @@ for posicion in range(len(cadena)):
 print(diccionarioCadena)
 
 diccionario = dict( zip( range( len(cadena) ), cadena ) )
+print(diccionario)
+'''
+
+# lista -> diccionario (list - dict)
+
+lista = ['h','o','l','a']
+diccionario = dict( zip(range(len(lista)),lista) )
+print(diccionario)
+
+# tupla -> diccionario (tupla - dict)
+
+tupla = ('h','o','l','a')
+diccionario = dict( zip(range(len(tupla)),tupla) )
+print(diccionario)
+
+# conjunto -> diccionario (set - dict)
+
+conjunto = {'h','o','l','a'}
+diccionario = dict( zip(range(len(conjunto)),conjunto) ) 
 print(diccionario)
