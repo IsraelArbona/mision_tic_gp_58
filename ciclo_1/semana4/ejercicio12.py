@@ -12,8 +12,16 @@ a = np.array(
 
 print(a, '\n')
 
+'''
 b = a[:2, 1:3]
 print(b,'\n')
 
 c = a[1:3,:2]
 print(c)
+'''
+
+d = np.fliplr(a)
+print(d)
+
+d = np.flip(a)
+print(d)
