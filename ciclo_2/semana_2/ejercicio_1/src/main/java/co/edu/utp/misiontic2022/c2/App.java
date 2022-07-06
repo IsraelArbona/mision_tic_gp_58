@@ -1,5 +1,7 @@
 package co.edu.utp.misiontic2022.c2;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -26,5 +28,41 @@ public class App
             System.out.println("Valor numero Horas mpc3 es: " + mpc3.getNumHoras());
         */
 
+        /*
+            // Declarar variables
+            String colorTriangulo;
+            double baseTriangulo;
+            double alturaTriangulo;
+
+            // Se instancia sc de la clase Scanner
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("Introduzca el color del triángulo: ");
+            colorTriangulo = sc.nextLine();
+            System.out.print("Introduzca la base del triángulo: ");
+            baseTriangulo = sc.nextDouble();
+            System.out.print("Introduzca la altura del triágulo: ");
+            alturaTriangulo = sc.nextDouble();
+
+            Triangulo triangulo = new Triangulo(colorTriangulo, baseTriangulo, alturaTriangulo);
+            System.out.printf("El área del triángulo %s es: %f", triangulo.getColor(), triangulo.calcularArea());
+            sc.close();
+        */
+
+        //Declara variable
+        String colorCuadrado;
+        double ladoCuadrado;
+
+        // instanciamos de la clase Scanner
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Introduzca el color del cuadrado: ");
+        colorCuadrado = sc.nextLine();
+        System.out.print("Introduzca el lado del cuadrado: ");
+        ladoCuadrado = sc.nextDouble();
+
+        Cuadrado cuadrado = new Cuadrado(colorCuadrado, ladoCuadrado);
+        System.out.printf("El área del cuadrado %s es: %f", cuadrado.getColor(),cuadrado.calcularArea());
+        sc.close();
     }
 }
