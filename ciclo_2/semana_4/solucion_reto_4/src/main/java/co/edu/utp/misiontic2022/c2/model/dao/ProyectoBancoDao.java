@@ -22,7 +22,7 @@ public class ProyectoBancoDao {
         ResultSet rs = null;
 
         String sql = " SELECT p.ID_Proyecto AS ID, p.Constructora, p.Ciudad, p.Clasificacion, " +
-                     " t.Estrato, l.Nombre || ' ' || l.Primer_Apellido || l.Segundo_Apellido AS LIDER " +
+                     " t.Estrato, l.Nombre || ' ' || l.Primer_Apellido || ' ' || l.Segundo_Apellido AS LIDER " +
                      " FROM Proyecto p " +
                      " JOIN Tipo t ON (p.ID_Tipo = t.ID_Tipo) " +
                      " JOIN Lider l ON (p.ID_Lider = l.ID_Lider) " +
